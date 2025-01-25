@@ -1,0 +1,7 @@
+- name: my playbook
+  hosts: prod
+  tasks:
+    - name: task 1 install apache2
+      include_tasks: tasks/1_apache2.yml
+    - name: add index html
+      include_tasks: tasks/2_some-website.yml

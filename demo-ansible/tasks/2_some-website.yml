@@ -1,0 +1,7 @@
+- name: add index.html 
+  copy:
+    src: files/index.html
+    dest: /var/www/html/index.html 
+    mode: "0755"
+    owner: "www-data"
+    group: "www-data"
