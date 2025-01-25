@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  jenkins:
+    image: custom-jenkins-node23
+    container_name: jenkins-253
+    ports:
+      - "8086:8080"
+      - "50006:50000"
+    volumes:
+      - local-jenkins-253-volume:/var/jenkins_home
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+    environment:
+      - JAVA_OPTS=-Dhudson.model.DownloadService.noSignatureCheck=true
+    ulimits:
+      nofile:
+        soft: 8096
+        hard: 8096
+
+volumes:
+  local-jenkins-253-volume:

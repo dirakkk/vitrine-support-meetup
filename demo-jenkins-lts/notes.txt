@@ -2,4 +2,4 @@
 sudo docker-compose up
 
 (première install :)
-sudo docker container exec -it 54d0f8ef5748 /bin/bash
+sudo docker container exec -it jenkins-lts /bin/bash
