@@ -1,0 +1,8 @@
+
+Création de l'image custom-jenkins-node23
+docker build -t custom-jenkins-node23 .
+
+sudo docker-compose up
+
+(première install :)
+sudo docker container exec -it jenkins-253 /bin/bash

@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jenkins:
-    image: jenkins/jenkins:2.53
+    image: custom-jenkins-node23
     container_name: jenkins-253
     ports:
       - "8086:8080"
