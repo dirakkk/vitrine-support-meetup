@@ -12,7 +12,10 @@ services:
     dns:
       - 1.1.1.1
       - 8.8.8.8
-
+    ulimits:
+      nofile:
+        soft: 8096
+        hard: 8096
 volumes:
   local-jenkins-lts-volume:
     external: true

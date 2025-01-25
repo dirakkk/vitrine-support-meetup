@@ -12,7 +12,12 @@ services:
     dns:
       - 1.1.1.1
       - 8.8.8.8
+    environment:
+      - JAVA_OPTS=-Dhudson.model.DownloadService.noSignatureCheck=true
+    ulimits:
+      nofile:
+        soft: 8096
+        hard: 8096
 
 volumes:
-  local-jenkins-lts-volume:
-    external: true
+  local-jenkins-253-volume:
