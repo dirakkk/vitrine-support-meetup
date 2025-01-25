@@ -1,0 +1,5 @@
+[prod]
+206.189.63.23
+
+[prod:vars]
+ansible_ssh_user=root
