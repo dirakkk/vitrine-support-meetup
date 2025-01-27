@@ -1,7 +1,7 @@
 import requests
 
 # Remplacez par votre token d'accès personnel
-TOKEN = ''
+#TOKEN = ''
 # Remplacez par le nom de votre dépôt et le propriétaire
 OWNER = 'dirakkk'
 REPO = 'vitrine-next'
